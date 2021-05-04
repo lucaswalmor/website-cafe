@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>WebSite Café</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul class="main-nav animate__animated animate__bounceInDown" id="check-class">
+                    <li><a href="#">CUPCAKE DELIVERY</a></li>
+                    <li><a href="#">FAÇA SEU PEDIDO</a></li>
+                    <li><a href="#">VER MAIS</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()" ><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+            <h1>
+                BEM VINDO AO <span class="colorchange">CAFÉ DO LUCAS</span>.<br>
+                PARA AMANTES DE BOLO.
+            </h1>
+
+            <a href="#" class="btn btn-full">Fazer Pedido</a>
+            <a href="#" class="btn btn-nav">Veja Mais</a>
+        </div>
+
+    </header>
+
+    <script>
+        function slideshow() {
+            var x = document.getElementById('check-class');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
